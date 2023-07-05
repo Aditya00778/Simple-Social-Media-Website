@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+      integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Twitter Clone</title>
+  </head>
+  <body>
+    <div class="grid">
+      <!-- Left side navigation -->
+      <section id="navigation">
+        <div class="container p-2">
+          <div class="topLink">
+            <a href="index.html" class="btn btn-twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+          <ul class="nav-list my-1">
+            <li>
+              <a href="index.html" class="btn btn-nav">
+                <i class="fa-solid fa-house-chimney-window"></i>
+                <b>Home</b>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="btn btn-user">
+                <div class="profile-image">
+                  <img
+                    src="pic.jpg"
+                    alt="profile"
+                    width="30"
+                    height="30"
+                  />
+                </div>
+                <div class="profile-details">
+                  <p>Aditya Kumar</p>
+                  <p>@aditya00778</p>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- News feed -->
+      <section id="newsfeed">
+        <div class="container p-2">
+          <h1>Home</h1>
+          <br />
+          <div class="createTweet">
+            <form action="" id="tweetForm">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+                required
+              />
+              <div class="first-row">
+                <div class="profile-image">
+                  <img
+                    src="pic.jpg"
+                    alt="userProfile"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <textarea
+                  name="tweet"
+                  id="tweetArea"
+                  placeholder="What's happening?"
+                  required
+                ></textarea>
+              </div>
+              <hr />
+              <br />
+              <button type="submit" class="btn btn-submit">Tweet</button>
+            </form>
+          </div>
+          <div class="tweetsContainer my-3">
+            <ul class="tweet-list" id="tweets-list">
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trends -->
+      <section id="trends">
+        <div class="container my-3">
+          <div class="trends container p-2">
+            <h1>Trending</h1>
+            <ul id="trends-list" class="trends-list my-2">
+              
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
